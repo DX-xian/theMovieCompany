@@ -1,373 +1,184 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
 <head>
-	<meta charset="UTF-8">
-	<title>中国电影股份有限公司</title>
-	<link rel="stylesheet" href="css/index.css">
-	<link rel="stylesheet" href="https://at.alicdn.com/t/font_739050_2397765j077.css">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Scroll bar enabled - fullPage.js</title>
+	<meta name="author" content="Alvaro Trigo Lopez" />
+	<meta name="description" content="fullPage full-screen navigation and sections control menu." />
+	<meta name="keywords"  content="fullpage,jquery,demo,scrollbar,scroll,bar,fullscreen,navigation,control arrows, dots" />
+	<meta name="Resource-type" content="Document" />
+
+	<link rel="stylesheet" type="text/css" href="css/fullpage.css" />
+	<link rel="stylesheet" type="text/css" href="css/examples.css" />
+	<style>
+
+	/* Style for our header texts
+	* --------------------------------------- */
+	h1{
+		font-size: 5em;
+		font-family: arial,helvetica;
+		color: #fff;
+		margin:0;
+	}
+	.intro p{
+		color: #fff;
+	}
+
+	/* Centered texts in each section
+	* --------------------------------------- */
+	.section{
+		text-align:center;
+	}
+
+
+	/* Bottom menu
+	* --------------------------------------- */
+	#infoMenu li a {
+		color: #fff;
+	}
+.top2{
+    position: absolute;
+    top: 30%;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}
+.someColor{
+    background-color:rgba(0,0,0) ;
+    color: white;
+}
+
+
+    .top1 img{
+        /*width: 100%;*/
+        /*height: 100%;*/
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto;
+    }
+
+      .nanji{
+          position: absolute;
+          top: 50px;
+          left: 300px;
+          /*background-color: whitesmoke;*/
+          z-index: 999999;
+          font-size: 30px;
+          color: whitesmoke;
+
+      }
+        .nanji1{
+            position: absolute;
+            top: 110px;
+            left: 300px;
+            /*background-color: whitesmoke;*/
+            font-size: 20px;
+            color: whitesmoke;
+
+        }
+
+.nanji6{
+	position: absolute;
+	left: 0;
+	bottom: 0;
+}
+.nanji5{
+	position: absolute;
+	left: 138px;
+	bottom: 0;
+}
+.wenzi4{
+	font-size: 60px;
+	color: white;
+}
+.wenzi5{
+	font-size: 30px;
+	margin-top: 50px;
+}
+
+
+	</style>
+
+	<!--[if IE]>
+		<script type="text/javascript">
+			 var console = { log: function() {} };
+		</script>
+	<![endif]-->
 </head>
 <body>
-	<!-- 最上部开始 -->
-	<section class="bestTop">
-		<a href="zhengwen.html"><div class="topLogo"></div></a>
 
-		<div class="top_top">
-			<div class="Home_page">
-				<span>加入收藏</span>
-				<span>/</span>
-				<span>设为首页</span>
-			</div>
-			<div class="top_air">
-				<span>|</span>
-				<span>|</span>
 
-			</div>
-			<div class="top_date">
-				<span>2018-7-10 星期二</span>
-			</div>
+
+<div id="fullpage">
+	<div class="section " id="section0">
+        <div class="top1">
+            <img src="img/111111.jpg" alt="">
+        </div>
+		<div class="intro top2">
+			<h1>中国电影股份有限公司</h1>
+			<p>CHINA</p>
 		</div>
-		<div class="topsearch">
-			<input type="text" class="topinput" >
-			<div class="magnifying">
-				<i class="iconfont icon-fangdajing jing"></i>
-			</div>
-		</div>
-		<div class="topmenu">
-			<ul>
-				<li>
-					<a href="index.html"><span>首页</span>
 
-						<div class="disappear">首页</div></a>
-				</li>
-				<li>
-					<a href="jieshao.html" ><span>公司介绍</span>
-						<div class="disappear">公司介绍</div></a>
-
-				</li>
-				<li>
-					<a href="centerxinxi.html"><span>信息中心</span>
-						<div class="disappear">信息中心</div></a>
-
-				</li>
-				<li>
-					<a href="gonggao.html"><span>公告</span>
-						<div class="disappear">公告</div></a>
-
-				</li>
-
-				<li>
-					<a href="touzi.html"><span>投资者关系</span>
-						<div class="disappear">投资者关系</div></a>
-
-				</li>
-			</ul>
-			<img src="img/alltit_cloud.png" alt="">
-		</div>
-	</section>
-	<!-- 最上部结束 -->
-
-	<!-- banner以下 开始-->
-	<section class="banner">
-        <a href="zhengwen.html">
-            <img src="img/bann1.jpg" alt="">
-
-        </a>
-        <a href="zhengwen.html"><img src="img/bann2.jpg" alt=""></a>
-        <a href="zhengwen.html"><img src="img/bann3.jpg" alt=""></a>
-        <a href="zhengwen.html"><img src="img/bann4.jpg" alt=""></a>
-
-		<div class="dot">
-			<div class="ban_dot">
-				<div class="in_dot"></div>
-			</div>
-			<div class="ban_dot">
-				<div class="in_dot"></div>
-			</div>
-			<div class="ban_dot">
-				<div class="in_dot"></div>
-			</div>
-			<div class="ban_dot">
-				<div class="in_dot"></div>
-			</div>
-		</div>
-	</section>
-	<!-- banner以下结束 -->
-	<!-- 新闻头条开始 -->
-	<section class="theNew_title">
-		<div class="new_title">
-			<span>新闻头条</span>
-		</div>
-		<img src="img/xinwen.png" alt="">
-	</section>
-
-	<section class="theNew">
-		<ul>
-			<li class="movie">
-				<a href="zhengwen.html" target="view_window>
-					<div class=" the_movie">
-						<img src="img/wodeguo.jpg" alt="">
-					</div>			
-					<div class="movName">《厉害了，我的国》</div>
-				</a>
-
-			</li>
-			<li class="movie">
-				<a href="zhengwen.html" target="view_window>
-					<div class=" the_movie">
-						<img src="img/niruoanhao.jpg" alt="">
-					</div>			
-					<div class="movName">《你若安好》</div>
-				</a>
-
-			</li>
-			<li class="movie">
-				<a href="zhengwen.html" target="view_window>
-					<div class=" the_movie">
-						<img src="img/liunian.jpg" alt="">
-					</div>			
-					<div class="movName">《流年》</div>
-				</a>
-
-			</li>
-			<li class="movie">
-				<a href="zhengwen.html" target="view_window>
-					<div class=" the_movie">
-						<img src="img/nange.jpg" alt="">
-					</div>			
-					<div class="movName">《南哥》</div>
-				</a>
-
-			</li>
-		</ul>
-
-
-	</section>
-	<!-- 新闻头条结束 -->
-	<!-- 头牌咨讯开始 -->
-	<section class="message_title">
-		<div class="mess_left">
-			<div class="mess_title">头牌影讯</div>
-		</div>
-		<div class="mess_left mess_right">
-			<div class="mess_title">信息中心</div>
-			<img src="img/alltit_cloud.png" alt="">
-			<div class="mess_more">
-				<i class="iconfont icon-sanx"></i>
-				<span>更多</span>
-			</div>
-		</div>
-	</section>
-	<section class="message">
-		<div class="message_left">
-			<div class="message_leftTop">
-				<div class="pic_top"></div>
-                <a href="zhengwen.html" target="view_window"><img src="img/meirenyu.jpg" alt=""></a>
-                <a href="zhengwen.html" target="view_window"><img src="img/mytuanzhang.jpg" alt=""></a>
-                <a href="zhengwen.html" target="view_window"><img src="img/langtuteng.jpg" alt=""></a>
-                <a href="zhengwen.html " target="view_window"><img src="img/maozhuxi.jpg" alt=""></a>
+	</div>
 
 
 
 
-			</div>
+	<div class="section" id="section1">
+	    <div class="slide" id="slide1">
 
-			<div class="message_leftdown">
-				<span>《美人鱼》</span>
+            <div class="intro">
 
-			</div>
-			<div class="message_leftdown">
-				<span>《我的团长》</span>
+				<span class="nanji">剧情简介</span>
+				<span class="nanji1">发生在南极的一场坠机事故，让婚庆公司老板吴富春<br>和高空物理学家荆如意相遇，两个毫无共同语言的男女在南极腹<br>地无人区冒险生存75天。在酷寒、没有物质供应、随处都是绝境的环境中，活下去<br>已经变成每一天的最大愿望。在寻找救援的过程中，这对性格水火不容但处境相同的人，敬畏了自然，领悟了爱情</span>
 
-			</div>
-			<div class="message_leftdown">
-				<span>《狼图腾》</span>
+				<!--<span class="nanji3">很好看</span>-->
 
-			</div>
-			<div class="message_leftdown">
-				<span>《百团大战》</span>
+            </div>
+            <div class="top2-2">
+                <img src="img/222.jpg" alt="">
+				<img src="img/剧照2.jpg" alt="" class="nanji6">
+				<img src="img/juzhao.jpg" alt="" class="nanji5">
 
-			</div>
-			<div class="messleft_right">
-				<div class="mess_manymov">
-                    <a href="zhengwen.html" target="view_window"><img src="img/meirenyu.jpg" alt=""></a>
-
-				</div>
-				<div class="mess_manymov">
-                    <a href="zhengwen.html" target="view_window"><img src="img/mytuanzhang.jpg" alt=""></a>
-
-				</div>
-				<div class="mess_manymov">
-                    <a href="zhengwen.html" target="view_window"><img src="img/langtuteng.jpg" alt=""></a>
-
-				</div>
-				<div class="mess_manymov">
-                    <a href="zhengwen.html" target="view_window"><img src="img/maozhuxi.jpg" alt=""></a>
-
-				</div>
 			</div>
 		</div>
 
-		<div class="message_right">
-			<div class="messright_top">
-				<ul>
-					<li class="messright_top1">
-						<div class="point"></div>
-						<a href="zhengwen.html" target="view_window">
-							<div class="messright_top2">
-								<div class="overflow">
-									<span>中影股份旗下公司再次入选“国家文化出口重点企业”名单</span>
-								</div>
-								
-								<span class="mess_color">2018-06-19</span>
-							</div>
-						</a>
-						
-					</li>
-					<li class="messright_top1">
-						<div class="point"></div>
-						<a href="zhengwen.html" target="view_window">
-							<div class="messright_top2">
-								<div class="overflow">
-									<span>中影股份旗下公司再次入选“国家文化出口重点企业”名单</span>
-								</div>
-								
-								<span class="mess_color">2018-06-19</span>
-							</div>
-						</a>
-						
-					</li>
-					<li class="messright_top1">
-						<div class="point"></div>
-						<a href="zhengwen.html" target="view_window">
-							<div class="messright_top2">
-								<div class="overflow">
-									<span>中影股份旗下公司再次入选“国家文化出口重点企业”名单</span>
-								</div>
-								
-								<span class="mess_color">2018-06-19</span>
-							</div>
-						</a>
-						
-					</li>
-					<li class="messright_top1">
-						<div class="point"></div>
-						<a href="zhengwen.html" target="view_window">
-							<div class="messright_top2">
-								<div class="overflow">
-									<span>中影股份旗下公司再次入选“国家文化出口重点企业”名单</span>
-								</div>
-								
-								<span class="mess_color">2018-06-19</span>
-							</div>
-						</a>
-						
-					</li>
-					<li class="messright_top1">
-						<div class="point"></div>
-						<a href="zhengwen.html" target="view_window">
-							<div class="messright_top2">
-								<div class="overflow">
-									<span>中影股份旗下公司再次入选“国家文化出口重点企业”名单</span>
-								</div>
-								
-								<span class="mess_color">2018-06-19</span>
-							</div>
-						</a>
-						
-					</li>
-				</ul>
-			</div>
-			<div class="mess_dashed"></div>
-			<div class="messright_top">
-				<ul>
-					<li class="messright_top1">
-						<div class="point"></div>
-						<a href="zhengwen.html " target="view_window">
-							<div class="messright_top2">
-								<div class="overflow">
-									<span>中影股份旗下公司再次入选“国家文化出口重点企业”名单</span>
-								</div>
-								
-								<span class="mess_color">2018-06-19</span>
-							</div>
-						</a>
-						
-					</li>
-					<li class="messright_top1">
-						<div class="point"></div>
-						<a href="zhengwen.html" target="view_window">
-							<div class="messright_top2">
-								<div class="overflow">
-									<span>中影股份旗下公司再次入选“国家文化出口重点企业”名单</span>
-								</div>
-								
-								<span class="mess_color">2018-06-19</span>
-							</div>
-						</a>
-						
-					</li>
-					<li class="messright_top1">
-						<div class="point"></div>
-						<a href="zhengwen.html" target="view_window">
-							<div class="messright_top2">
-								<div class="overflow">
-									<span>中影股份旗下公司再次入选“国家文化出口重点企业”名单</span>
-								</div>
-								
-								<span class="mess_color">2018-06-19</span>
-							</div>
-						</a>
-						
-					</li>
-					<li class="messright_top1">
-						<div class="point"></div>
-						<a href="zhengwen.html" target="view_window">
-							<div class="messright_top2">
-								<div class="overflow">
-									<span>中影股份旗下公司再次入选“国家文化出口重点企业”名单</span>
-								</div>
-								
-								<span class="mess_color">2018-06-19</span>
-							</div>
-						</a>
-						
-					</li>
-					<li class="messright_top1">
-						<div class="point"></div>
-						<a href="zhengwen.html " target="view_window">
-							<div class="messright_top2">
-								<div class="overflow">
-									<span>中影股份旗下公司再次入选“国家文化出口重点企业”名单</span>
-								</div>
-								
-								<span class="mess_color">2018-06-19</span>
-							</div>
-						</a>
-						
-					</li>
-				</ul>
-			</div>
+	    <div class="slide" id="slide2">
+            <div class="top2-2">
+                <img src="img/3333.jpg" alt="">
+            </div>
+			<h1>Slide 2</h1>
 		</div>
 
+	</div>
+	<div class="section" id="section2">
+        <div class="intro top2">
+			<span class="wenzi4">我们一直坚持的，是您的快乐</span>
+			<a href="shouye.html"><h1 class="wenzi5">点击进入首页</h1></a>
 
-
-	</section>
-	<!-- 头牌咨讯结束 -->
-
-	<!-- 末尾开始 -->
-	<section class="end">
-		<div class="end_center">
-			<span>中国电影股份有限公司 © 版权所有 京ICP备14025334号</span>
-			<div class="about">
-				<a href="lianxi.html" target="view_window"><h1>联系我们</h1></a>
-				<h2>|</h2>
-				<a href="jieshao.html" target="view_window"><h1>关于我们</h1></a>
-			</div>
 		</div>
-	</section>
-	<!-- 末尾结束 -->
+        <div class="top2-2">
+            <img src="img/4444.jpg" alt="">
+        </div>
+
+	</div>
+</div>
+
+<script type="text/javascript" src="js/fullpage.js"></script>
+<script type="text/javascript" src="js/examples.js"></script>
+
+<script type="text/javascript">
+    var myFullpage = new fullpage('#fullpage', {
+        anchors: ['firstPage', 'secondPage', '3rdPage'],
+        sectionsColor: ['#C63D0F', '#1BBC9B', '#7E8F7C'],
+        scrollBar: true
+    });
+</script>
+
 </body>
 </html>
-
-
-
