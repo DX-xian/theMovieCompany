@@ -216,7 +216,7 @@
 	height: 0px;
 	position: absolute;
 	left: 0;
-    bottom: -127px;
+    top:30px;
     
 	background-color: #FDEBDC;
 	z-index:20;

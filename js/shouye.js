@@ -119,7 +119,7 @@ window.onload = function () {
     let next=0;
     let widths=950;
     
-  let fn=  function (){
+  let fn= function (){
         next++;
         if(next>=img.length){
             next=0;
